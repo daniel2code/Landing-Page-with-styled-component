@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    /* border: 1px solid; */
+}
+
+#body {
+    display: flex;
+    flex-direction: row;
+    background-image: url('../img/bgnew.jpg');
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    /* width: 100vw; */
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    font-family: open sans,
+    helvetica neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.bdtxt2 {
+    max-width: 460px;
+    margin-left: 15px;
+}
+
+.dinp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: inherit;
+    background-color: white;
+    height: 50px;
+    border-radius: 3px;
+    line-height: 1.61;
+
+}
+
+.input {
+    height: 48px;
+    background-color: white;
+    border-radius: inherit;
+    border: none;
+    width: 390px;
+    font-size: 20px;
+}
+
+.input::placeholder {
+    font-size: 20px;
+    color: gray;
+}
+
+.ftt-container {
+    position: relative;
+    width: max-content;
+    height: inherit;
+    border: transparent;
+}
+
+.ftt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 50px;
+    left: 12em;
+    background-color: transparent;
+    border: none;
+}
+
+.ftt:hover {
+    background-color: rgb(236, 82, 82);
+}
+
+.ftt:hover .fa {
+    color: #fff;
+}
+
+.t1 {
+    color: white;
+    max-width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #fff;
+    font-style: normal;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(41, 48, 59, .55);
+    font-family: inherit;
+}
+
+.t2 {
+    font-size: 18px;
+    line-height: 1.61;
+    max-width: 100%;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(41, 48, 59, .55);
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.bdtxt {
+    margin-top: 100px;
+    width: 1174px
+}
+
+@media(max-width:650px) {
+
+    #body {
+        background-position: top;
+        background-size: contain;
+    }
+
+    .bdtxt2 {
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+    .dinp{
+        border: 1px solid gray;
+    }
+
+    .input {
+        width: 82vw;
+        font-size: 17px;
+        text-indent: 10px;
+    }
+
+    .t1, .t2 {
+        color: #000000;
+        text-shadow: none;
+    }
+}
